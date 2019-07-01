@@ -4,7 +4,8 @@
 set -m
 
 # Start the primary process and put it in the background
-nginx &
+# nginx &
+nginx -g "daemon off" &
 
 # Start the helper process
 /app/main &
